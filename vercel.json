@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/export.js": {
+      "runtime": "nodejs14.x"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/export.js" }
+  ]
+}
