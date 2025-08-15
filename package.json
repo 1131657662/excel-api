@@ -1,7 +1,10 @@
 {
-  "name": "excel-api",
-  "version": "1.0.0",
-  "dependencies": {
-    "node-xlsx": "^0.23.0"
-  }
+  "functions": {
+    "api/export.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/export.js" }
+  ]
 }
